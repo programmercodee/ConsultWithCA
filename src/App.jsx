@@ -10,6 +10,9 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingCTA from './components/FloatingCTA';
+import DirectContactBanner from './components/DirectContactBanner';
+import MidContactBanner from './components/MidContactBanner';
+import MobileStickyBar from './components/MobileStickyBar';
 
 function App() {
   return (
@@ -17,14 +20,18 @@ function App() {
       <Header />
       <Hero />
       <Services />
+      <MidContactBanner />
       <Industries />
+      <MidContactBanner title="Have an industry-specific question?" subtitle="Speak to an expert CA who understands your sector." />
       <WhyChooseUs />
       <DueDateReminder />
       <KnowledgeBank />
       <Testimonials />
+      <DirectContactBanner />
       <Contact />
       <Footer />
       <FloatingCTA />
+      <MobileStickyBar />
     </div>
   );
 }

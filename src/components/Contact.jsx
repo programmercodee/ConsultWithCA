@@ -124,21 +124,21 @@ const Contact = () => {
                   <span className="text-xl mr-4">📧</span>
                   <div>
                     <div className="font-medium text-black">Email</div>
-                    <div className="text-blue-500">info@consultwithca.com</div>
+                    <div className="text-blue-500">consultwithcaa@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <span className="text-xl mr-4">📱</span>
                   <div>
                     <div className="font-medium text-black">Phone</div>
-                    <div className="text-blue-500">+91 XXXXX XXXXX</div>
+                    <div className="text-blue-500">+91 84079 81114</div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <span className="text-xl mr-4">📍</span>
                   <div>
                     <div className="font-medium text-black">Office</div>
-                    <div className="text-blue-500">Business District, City</div>
+                    <div className="text-blue-500">FP No. 37/B1+B2, Abhinav Kala Mahavidyalaya Chowk, CTS No 431/195, Tilak Rd, Dadawadi, Shukrawar Peth, Pune, Maharashtra 411002</div>
                   </div>
                 </div>
                 <div className="flex items-center">

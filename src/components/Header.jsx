@@ -15,6 +15,32 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md fixed w-full z-50">
+      {/* Announcement Bar */}
+      <div className="bg-blue-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-2 text-sm">
+          <div className="flex items-center gap-4">
+            <span>Free Consultation • Mon - Sat: 9:00 AM - 7:00 PM</span>
+            <span className="hidden md:inline">All India Service</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <a
+              href="https://wa.me/918407981114?text=Hi%20ConsultWithCA,%20I%20need%20assistance."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white font-semibold px-3 py-1 rounded"
+            >
+              WhatsApp
+            </a>
+            <a
+              href="tel:+918407981114"
+              className="bg-white text-blue-900 hover:bg-blue-50 font-semibold px-3 py-1 rounded"
+            >
+              Call
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
