@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* Design tokens */
+:root {
+  --color-primary: #1e40af;
+  /* blue-800 */
+  --color-secondary: #0ea5e9;
+  /* sky-500 */
+  --color-accent: #059669;
+  /* emerald-600 */
+  --color-gold: #b45309;
+  /* amber-700 */
+}
+
+/* Base resets/extensions */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800 bg-white antialiased;
+  }
+}
+
+/* Component classes */
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-white bg-blue-700 hover:bg-blue-800 transition-colors duration-200 shadow-sm;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-blue-700 bg-blue-100 hover:bg-blue-200 transition-colors duration-200;
+  }
+
+  .card-hover {
+    @apply transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  .bg-gold {
+    background-color: var(--color-gold);
+  }
+
+  .ring-gold {
+    --tw-ring-color: var(--color-gold);
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .heading-underline {
+    position: relative;
+  }
+
+  .heading-underline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+    height: 3px;
+    width: 5rem;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    border-radius: 9999px;
+  }
+}
