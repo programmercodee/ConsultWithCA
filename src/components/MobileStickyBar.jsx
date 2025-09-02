@@ -2,7 +2,7 @@ import React from 'react';
 
 const MobileStickyBar = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
+    <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden">
       <div className="mx-auto max-w-7xl">
         <div className="m-3 rounded-2xl shadow-2xl overflow-hidden grid grid-cols-2">
           <a
