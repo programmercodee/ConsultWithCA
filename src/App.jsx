@@ -32,7 +32,7 @@ function App() {
       <Contact />
       <Footer />
       <FloatingCTA />
-      <MobileStickyBar />
+      {/* <MobileStickyBar /> */}
       <WelcomePopup />
     </div>
   );
