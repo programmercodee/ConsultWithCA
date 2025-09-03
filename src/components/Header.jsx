@@ -46,9 +46,10 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="text-2xl font-bold text-primary">
-              ConsultWithCA
+              {/* ConsultWithCA */}
+              <img src="/logo2.png" alt="" className='h-12 w-auto'/>
             </div>
-            <div className="ml-2 text-sm text-secondary">.com</div>
+            {/* <div className="ml-2 text-sm text-secondary">.com</div> */}
           </div>
 
           {/* Desktop Navigation */}

@@ -7,9 +7,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-2">
-            <div className="text-2xl font-bold mb-4">ConsultWithCA.com</div>
+            <div className="text-2xl font-bold mb-4">
+              {/* <img src="/logo2.png" alt="" className='h-24 w-auto' /> */}
+              <span>ConsultWithCA.com</span>
+            </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Your trusted partner for all chartered accountant services. We provide 
+              Your trusted partner for all chartered accountant services. We provide
               comprehensive tax, audit, and compliance solutions to help your business grow.
             </p>
             <div className="flex space-x-4 mb-6">
@@ -18,8 +21,8 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition duration-300">Facebook</a>
             </div>
             <div className="text-sm text-gray-400">
-              <p>CA Firm Registration: XXXXXX</p>
-              <p>GSTIN: XXXXXXXXXXXXXXX</p>
+              <p>CA Firm Registration: XX153S</p>
+              <p>GSTIN: XXXXXXXXXXX8963</p>
             </div>
           </div>
 
