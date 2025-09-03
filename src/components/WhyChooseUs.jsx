@@ -190,8 +190,8 @@ const WhyChooseUs = () => {
             <a href="#contact" className="bg-white text-accent hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition duration-300">
               Schedule Free Consultation
             </a>
-            <a href="tel:+91XXXXXXXXX" className="border-2 border-white text-black hover:bg-gray-100 hover:text-accent font-semibold py-3 px-8 rounded-lg transition duration-300">
-              Call Now: +91 XXXXX XXXXX
+            <a href="tel:+918407981114" className="border-2 border-white text-black hover:bg-gray-100 hover:text-accent font-semibold py-3 px-8 rounded-lg transition duration-300">
+              Call Now: +91 84079 81114
             </a>
           </div>
         </div>
