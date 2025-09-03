@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="/logo2.ico" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta Tags -->
@@ -20,6 +20,17 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://consultwithca.com" />
 
+  <!-- Hreflang -->
+  <link rel="alternate" href="https://consultwithca.com" hreflang="en-IN" />
+  <link rel="alternate" href="https://consultwithca.com" hreflang="x-default" />
+
+  <!-- Favicons & App Icons -->
+  <link rel="icon" href="/logo2.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo2.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://consultwithca.com" />
@@ -27,7 +38,7 @@
     content="ConsultWithCA - Expert CA Services | Tax Planning, GST, Audit & Compliance India" />
   <meta property="og:description"
     content="Leading Chartered Accountant firm in India. Expert tax planning, GST compliance, audit services, ROC filing & business consulting. 500+ clients served. Free consultation available." />
-  <meta property="og:image" content="https://consultwithca.com/og-image.jpg" />
+  <meta property="og:image" content="https://consultwithca.com/logo.png" />
   <meta property="og:site_name" content="ConsultWithCA" />
   <meta property="og:locale" content="en_IN" />
 
@@ -38,7 +49,7 @@
     content="ConsultWithCA - Expert CA Services | Tax Planning, GST, Audit & Compliance India" />
   <meta name="twitter:description"
     content="Leading Chartered Accountant firm in India. Expert tax planning, GST compliance, audit services, ROC filing & business consulting. 500+ clients served. Free consultation available." />
-  <meta name="twitter:image" content="https://consultwithca.com/twitter-image.jpg" />
+  <meta name="twitter:image" content="https://consultwithca.com/logo.png" />
 
   <!-- Additional SEO Meta Tags -->
   <meta name="geo.region" content="IN" />
@@ -56,78 +67,61 @@
       "description": "Leading Chartered Accountant firm providing expert tax planning, GST compliance, audit services, and business consulting across India.",
       "url": "https://consultwithca.com",
       "logo": "https://consultwithca.com/logo.png",
-      "image": "https://consultwithca.com/hero-image.jpg",
+      "image": "https://consultwithca.com/logo.png",
       "telephone": "+918407981114",
       "email": "info@consultwithca.com",
       "address": {
         "@type": "PostalAddress",
-        "addressCountry": "IN",
-        "addressRegion": "India"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "28.6139",
-        "longitude": "77.2090"
+        "streetAddress": "FP No. 37/B1+B2, Abhinav Kala Mahavidyalaya Chowk, CTS No 431/195, Tilak Rd, Dadawadi, Shukrawar Peth",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411002",
+        "addressCountry": "IN"
       },
       "openingHours": "Mo-Sa 09:00-19:00",
       "priceRange": "₹₹",
       "currenciesAccepted": "INR",
       "paymentAccepted": "Cash, Credit Card, Bank Transfer",
       "areaServed": "IN",
-      "serviceArea": {
-        "@type": "Country",
-        "name": "India"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "CA Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Tax Planning & Filing",
-              "description": "Complete income tax solutions for individuals and businesses"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "GST Services",
-              "description": "End-to-end GST compliance and consultation services"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Audit & Assurance",
-              "description": "Professional audit services for compliance and growth"
-            }
-          }
-        ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "500",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+918407981114",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi"]
+      }]
+    }
+    </script>
+
+  <!-- FAQ Schema for Rich Results -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Rajesh Kumar"
-          },
-          "reviewBody": "Excellent GST compliance services. Saved us ₹2.5 lakhs annually through proper tax optimization."
+          "@type": "Question",
+          "name": "What CA services do you provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer Tax Planning & Filing, GST Registration & Compliance, Audit & Assurance, Company Formation, Accounting, and Legal & Compliance services across India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I book a free CA consultation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click 'Schedule Free Consultation' on the homepage or call +91 84079 81114. You can also WhatsApp us directly from the website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with startups and SMEs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We support startups, SMEs, and enterprises with incorporation, registrations, monthly compliance, accounting, GST, and audits."
+          }
         }
       ]
     }

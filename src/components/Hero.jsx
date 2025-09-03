@@ -1,15 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const backgroundImages = [
+    {
+      src: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2071&q=80',
+      alt: 'Business and Finance'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2070&q=80',
+      alt: 'Modern Office'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=2071&q=80',
+      alt: 'Business Strategy'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2074&q=80',
+      alt: 'Financial Planning'
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="home" className="relative bg-gradient-to-br from-blue-50 to-indigo-100 pt-20 overflow-hidden" role="banner" aria-label="Hero Section">
       {/* Background Image */}
       <div className="absolute inset-0 z-0" aria-hidden="true">
-        <img
-          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
-          alt="Professional business and finance background representing ConsultWithCA services"
-          className="w-full h-full object-cover opacity-100"
-        />
+        {backgroundImages.map((image, index) => (
+          <img
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+          />
+        ))}
         {/* Gradient Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/90 via-blue-50/80 to-indigo-100/90"></div>
       </div>
