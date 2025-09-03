@@ -13,6 +13,7 @@ import FloatingCTA from './components/FloatingCTA';
 import DirectContactBanner from './components/DirectContactBanner';
 import MidContactBanner from './components/MidContactBanner';
 import MobileStickyBar from './components/MobileStickyBar';
+import WelcomePopup from './components/WelcomePopup';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Footer />
       <FloatingCTA />
       <MobileStickyBar />
+      <WelcomePopup />
     </div>
   );
 }
