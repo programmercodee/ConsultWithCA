@@ -4,22 +4,29 @@ const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const backgroundImages = [
-    {
-      src: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2071&q=80',
-      alt: 'Business and Finance'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2070&q=80',
-      alt: 'Modern Office'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=2071&q=80',
-      alt: 'Business Strategy'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2074&q=80',
-      alt: 'Financial Planning'
-    }
+    { src: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2071&q=80', alt: 'Business and Finance' },
+    { src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2070&q=80', alt: 'Modern Office' },
+    { src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=2071&q=80', alt: 'Business Strategy' },
+    { src: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2074&q=80', alt: 'Financial Planning' },
+    { src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2069&q=80', alt: 'Accounting Desk with Laptop' },
+    { src: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2069&q=80', alt: 'Calculator and Reports' },
+    { src: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=2069&q=80', alt: 'Team Meeting Finance' },
+    { src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2069&q=80', alt: 'Coworking Office' },
+    { src: 'https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=2069&q=80', alt: 'Financial Data and Charts' },
+    { src: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2069&q=80', alt: 'Business Presentation' },
+    { src: 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=2069&q=80', alt: 'Tax Preparation' },
+    { src: 'https://images.unsplash.com/photo-1542223188-3f8f6f7b0f36?auto=format&fit=crop&w=2069&q=80', alt: 'Balance Sheet Analysis' },
+    { src: 'https://images.unsplash.com/photo-1551281044-8b72f0b6f4d4?auto=format&fit=crop&w=2069&q=80', alt: 'Budget Planning' },
+    { src: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=2069&q=80', alt: 'Analytics Dashboard' },
+    { src: 'https://images.unsplash.com/photo-1556740714-a8395b3bf30f?auto=format&fit=crop&w=2069&q=80', alt: 'Client Consultation' },
+    { src: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=2069&q=80', alt: 'Notebook and Financial Notes' },
+    { src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=2069&q=80', alt: 'Teamwork in Office' },
+    { src: 'https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&w=2069&q=80', alt: 'Investment Planning' },
+    { src: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2069&q=80', alt: 'Spreadsheet Work' },
+    { src: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2069&q=80', alt: 'Documents and Calculator' },
+    { src: 'https://images.unsplash.com/photo-1518081468390-4793f36f9b85?auto=format&fit=crop&w=2069&q=80', alt: 'Tax Forms and Pen' },
+    { src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=2069&q=80', alt: 'Laptop with Financial Graphs' },
+    { src: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=2069&q=80', alt: 'Savings and Piggy Bank' }
   ];
 
   useEffect(() => {
